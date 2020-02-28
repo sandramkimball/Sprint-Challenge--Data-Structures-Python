@@ -13,14 +13,15 @@ class RingBuffer:
 
         if self.storage == self.capacity:
             self.current = 0
+            self.storage.pop(current)
+            self.storage.append(item)
             self.storage.current = item
             # current = oldest, current[i+]
 
     def get(self):
         list_buffer_contents = []
-        if None:
-
-        
+        # if list_buffer_contents contains None:
+        #     None[i] = 0        
         return list_buffer_contents
 
 # ----------------Stretch Goal-------------------

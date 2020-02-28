@@ -43,4 +43,5 @@ class LinkedList:
     return False
 
   def reverse_list(self):
-    return node[0:-1]
+    for i in range (0, len(self)):
+      return i - 1
