@@ -8,14 +8,19 @@ class RingBuffer:
         self.storage = DoublyLinkedList()
 
     def append(self, item):
-        pass
+        if self.storage < self.capacity:
+            self.storage.append(item)
+
+        if self.storage == self.capacity:
+            self.current = 0
+            self.storage.current = item
+            # current = oldest, current[i+]
 
     def get(self):
-        # Note:  This is the only [] allowed
         list_buffer_contents = []
+        if None:
 
-        # TODO: Your code here
-
+        
         return list_buffer_contents
 
 # ----------------Stretch Goal-------------------
