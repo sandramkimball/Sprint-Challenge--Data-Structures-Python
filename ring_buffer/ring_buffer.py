@@ -7,6 +7,8 @@ class RingBuffer:
         self.current = None
         self.storage = DoublyLinkedList()
 
+# OOP: O(n)?
+
     def append(self, item):
         # self.storage[self.current] = item
         if len(self.storage) == self.capacity:
